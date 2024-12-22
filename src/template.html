@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+</head>
+<body>
+    <div class="title">
+        Battleship made By Romain300
+    </div>
+
+    <div class="main-container">
+        
+        <div class="player-modes">
+
+            <form id="one-player">
+                <input type="hidden" value="1">
+                <button type="submit">1 Player</button>
+            </form>
+    
+            <form id="two-players">
+                <input type="hidden" value="2">
+                <button type="submit">2 Players</button>
+            </form>
+
+        </div>
+
+        <form id="form-name-1-player" style="display: none;">
+            <div>
+                <label for="name">Name:</label>
+                <input required type="text" id="name" placeholder="Enter a name">
+            </div>
+            <div>
+                <button type="submit">Enter</button>
+                <button class="menu" type="button">Menu</button>
+            </div>
+
+        </form>
+        
+        <form id="form-name-2-players" style="display: none;">
+            <div>
+                <label for="name-player-1">Player1 's name</label>
+                <input required type="text" id="name-player-1" placeholder="Enter a name">
+            </div>
+            <div>
+                <label for="name-player-2">Player2 's name</label>
+                <input required type="text" id="name-player-2" placeholder="Enter a name">
+            </div>
+            <div>
+                <button type="submit">Enter</button>
+                <button class="menu" type="button">Menu</button>
+            </div>
+        </form>
+
+        <div class="information-tab">
+            
+            <div id="players-div"></div>
+            <div id="winner-div"></div>
+            <div>
+                <button class="menu-shuffle" id="shuffle">Shuffle / Replay</button>
+                <button class="menu-shuffle menu">Menu</button>
+
+            </div>
+           
+        </div>
+
+        <div id="ships-tab"></div>
+
+        <div class="game">
+            
+            <div class="gameboard" id="gameboard-player01"></div>
+
+            <div class="gameboard" id="gameboard-player02"></div>
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>

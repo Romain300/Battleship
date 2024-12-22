@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.title {
+    text-align: center;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1.5rem;
+    background-color: antiquewhite;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: whitesmoke;
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    
+}
+
+.grid-item {
+    border: 1px solid black;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.game {
+    display: flex;
+    gap: 2rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+
+.player-modes {
+    display: flex;
+    gap: 1rem;  
+}
+
+.information-tab {
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#players-div {
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#winner-div {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.menu-shuffle {
+    font-size: 1.2rem;
+    font-family: fantasy;
+}
+
+#ships-tab {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.ships-information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.ship {
+    display: flex;
+}
+
